@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1 class="splitter">SPLITTER</h1> -->
+    <div class="container">
+
+        <div class="left">
+
+            <div class="bill">
+                <p>Bill</p>
+                <div class="input_container">
+                    <img src="./images/icon-dollar.svg" alt="">
+                    <input type="number" placeholder="0" id="bill_input">
+                </div>
+            </div>
+
+            <div class="bill_mobile">
+                <div class="input_container_mobile">
+                    <p style="color: gray;">Bill</p>
+                    <input type="number" placeholder="0" id="bill_input">
+                </div>
+            </div>
+
+            <!--
+            <div class="tip_container">
+                <p>Select tip %</p>
+                <div class="tip" class="rows">
+                    <div class="topRow">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                    </div>
+                  
+                    <div class="bottomRow" class="rows">
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input id="custom" type="number" placeholder="Custom">
+                    </div>
+                </div> end of tip 
+            </div>  end of tipContainer
+            -->
+            <div class="tip">
+                <p>Select Tip %</p>
+                <div class="button_container">
+                    <button class="buttons">5%</button>
+                    <button class="buttons">10%</button>
+                    <button class="buttons">15%</button>
+                    <button class="buttons">20%</button>
+                    <button class="buttons">30%</button>
+                    <input type="text" id="custom" placeholder="Custom">
+                </div>
+            </div> <!-- end of tip -->
+
+            <div class="people">
+                <p>Number of People</p>
+                <div class="input_container">
+                    <img src="./images/icon-person.svg" alt="person">
+                    <input type="number" placeholder="0" id="people_input">
+                </div>
+            </div>
+            <div class="people_mobile">
+                <div class="input_container">
+                    <p style="color: gray;"># of People</p>
+                    <input type="number" placeholder="0" id="people_input">
+                </div>
+            </div>
+
+        </div> <!-- end of left -->
+
+        <div class="right" id="right">
+            <div class="tipTotal">
+                
+                <div class="tipAmt_container">
+                    <div class="tipAmt">
+                        <p style="font-weight: bold; color: white;">Tip Amount</p>
+                        <p style="font-size: 12px;">/ person</p>
+                    </div>
+                    <div class="dollarAmt">
+                        <p id="tipPerPerson">$0.00</p>
+                    </div>
+                </div> <!-- end of tipAmt -->
+
+                <div class="total">
+                    <div>
+                        <p style="font-weight: bold; color: white;">Total</p>
+                        <p style="font-size: 12px;">/ person</p>
+                    </div>
+                    <div class="dollarAmt">
+                        <p id="totalPerPerson">$0.00</p>
+                    </div>
+                </div> <!-- end of total -->
+
+            </div> <!-- end of tipTotal -->
+            
+            <button class="reset" style="font-weight: bold;">RESET</button>
+        </div> <!-- end of right -->
+
+    </div> <!-- end of container -->
+
+    <div class="themeWrapper">
+        <img id="theme_btn" src="images/icon-moon.svg" alt="dark mode">
+        <!-- <img src="images/icon-sun.svg" alt="light mode"> -->
+
+        <div class="dropup">
+            <button class="dropbtn">Select Theme</button>
+            <div class="dropup_content">
+                <a href="#" onclick="darkModeProps()">Dark Mode</a>
+                <a href="#" onclick="lightModeProps()">Light Mode</a>
+                <a href="#" onclick="myTheme()">Color Theme</a>
+                <a href="#" id="theme1" onclick="switchTheme()">Range Theme</a>
+                <a href="#" onclick="mobileVersion()">Mobile Version</a>
+            </div>
+        </div> <!-- end of dropup -->
+    </div> <!-- end of themeWrapper -->
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #c4e0e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+/* .splitter {
+    border: 1px solid red;
+    width: 100px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+} */
+
+.container {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.left {
+    /* background-color: yellow; */
+    box-sizing: border-box;
+
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+    
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px; */
+}
+
+.bill {
+    /* background-color: green; */
+
+    width: 100%;
+    height: 50px;
+}
+
+.bill_mobile {
+    display: none;
+}
+
+.input_container {
+    background-color: #f6f7fc;
+
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.input_container input {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: end;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+}
+
+.input_container_mobile {
+    background-color: #f6f7fc;
+
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    padding: 7px;
+
+    /* display: none; */
+}
+
+.input_container_mobile input {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: end;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+}
+
+/* .tip_container {
+    /* border: 1px solid red;
+    background-color: beige;
+
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+} */
+
+.tip {
+    /* background-color: red; */
+    /* background-color: beige; */
+
+    width: 100%;
+    height: 150px;
+    /* margin-top: 15px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.button_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px 10px;
+}
+
+.buttons {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #00404b;
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* .rows {
+    display: grid;
+    grid-template-columns: 100px 200px;
+} */
+
+/* button {
+    background-color: darkcyan;
+    width: 90px;
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(189, 41%, 97%);
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+
+    padding: 5px;
+    border-radius: 6px;
+} */
+
+#custom {
+    /* border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 85px;
+    padding: 10px 0px 10px 0px; */
+
+    width: 100px;
+    height: 40px;
+    font-family: 'Space Mono', monospace;
+    border-radius: 5px;
+    border: .5px solid gray;
+    text-align: center;
+}
+
+.people {
+    /* background-color: orange; */
+
+    width: 100%;
+    height: 50px;
+}
+
+.people_mobile {
+    display: none;
+}
+
+.people_mobile p {
+    /* border: 2px solid red; */
+
+    width: 200px;
+    font-size: 20px;
+}
+
+.right {
+    /* border: 3px solid blue; */
+    
+    box-sizing: border-box;
+   
+    width: 350px;
+    /* height: 100%; */
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.tipAmt_container {
+    padding: 15px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(185, 41%, 84%);
+}
+
+.total {
+    /* background-color: orange; */
+
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(185, 41%, 84%);
+}
+
+.dollarAmt {
+    /* border: 1px solid white; */
+
+    display: flex;
+    font-size: 38px;
+    font-weight: bold;
+    color: hsl(172, 67%, 45%)
+}
+
+.reset {
+    /* border: 5px solid white; */
+
+    background-color: hsl(172, 67%, 45%);
+    width: 80%;
+    /* height: 35px; */
+    text-align: center;
+    margin: 0px 15px 35px 35px;
+    padding: 6px;
+    border-radius: 6px;
+    opacity: 0.2;
+}
+
+/* .themeWrapper {
+    /* border: 10px solid blue; 
+
+    width: 600px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+} */
+
+#theme_btn {
+     /* border: 1px solid white; */
+
+    cursor: pointer;
+    margin: 10px 0px;
+    float: right;
+}
+
+/* add css to drop up menu */
+
+/* dropup container div */
+.dropup {
+    /* border: 1px solid yellow; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* display: block; */
+}
+
+/* dropup button */
+.dropbtn {
+    border: 2px solid red;
+
+    padding: 10px;
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(185, 41%, 84%);
+    border-radius: 10px;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+/* dropup content hidden by default */
+.dropup_content {
+    /* border: 2px solid blue; */
+
+    display: none;
+    /* position: absolute; */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    bottom: 50px;
+    z-index: 1;
+}
+
+/* links inside the dropup */
+.dropup_content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* change color of dropup links on hover */
+.dropup_content a:hover {
+    background-color: #ddd;
+}
+
+/* show the dropup menu on hover */
+.dropup:hover .dropup_content {
+    display: block;
+}
+
+/* change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+    background-color: transparent;
+    color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        /* background-color: red; */
+        /* 520 x 840 */
+
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-family: "Rubiks";
+    }
+
+    .container {
+        /* background-color: yellow; */
+        /* padding: 30px; */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 80%;
+        height: 80%;
+    }
+
+    .left {
+        /* border: 2px solid blue; */
+
+        height: 50%;
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .bill {
+        display: none;
+    }
+
+    .bill_mobile {
+        display: block;
+    }
+
+    .people {
+        display: none;
+    }
+
+    .people_mobile {
+        display: block;
+    }
+
+    .right {
+        border: 2px dashed blue;
+
+        width: 100%;
+        height: 45%;
+        padding: 20px;
+        font-size: 20px;
+        padding-bottom: 0px;
+    } 
+
+    /* .themeWrapper {
+
+        width: 225px;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    } */
+
+    #theme_btn {
+        display: none;
+    }
+}
